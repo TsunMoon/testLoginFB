@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login By Facebook</title>
+</head>
+<body>
+    <button onclick="loginFB()">Login Facebook</button>
+
+    <!-- FIREBASE -->
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+ <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDAt4Zt0Yum2KZuLBGDgQ6ZdKHNQLwQcKA",
+      authDomain: "thanh-d14c5.firebaseapp.com",
+      databaseURL: "https://thanh-d14c5.firebaseio.com",
+      projectId: "thanh-d14c5",
+      storageBucket: "thanh-d14c5.appspot.com",
+      messagingSenderId: "329153568125",
+      appId: "1:329153568125:web:55399b6901ab724c3f4014",
+      measurementId: "G-YV0JD6P558"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
