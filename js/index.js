@@ -6,7 +6,8 @@ const loginFB = () => {
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
-        log(user);
+        console.log("login success");
+        console.log(user);
         localStorage.setItem("userFB",user);
         // ...
       }).catch(function(error) {
@@ -23,6 +24,7 @@ const loginFB = () => {
 
 const logoutFB = () => {
   firebase.auth().signOut().then(function() {
+    console.log("Logout success");
     // Sign-out successful.
   }).catch(function(error) {
     // An error happened.
