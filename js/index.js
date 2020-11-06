@@ -1,6 +1,8 @@
 const loginFB = () => {
     var provider = new firebase.auth.FacebookAuthProvider();
 
+    provider.addScope('user_birthday');
+    firebase.auth().useDeviceLanguage();
     firebase.auth().signInWithPopup(provider).then(function(result) {
         // This gives you a Facebook Access Token. You can use it to access the Facebook API.
         var token = result.credential.accessToken;
