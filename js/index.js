@@ -11,6 +11,7 @@ const loginFB = () => {
         console.log("login success");
         console.log(user);
         localStorage.setItem("userFB",user);
+        document.getElementById("imgFb").setAttribute("src",user.photoURL)
         // ...
       }).catch(function(error) {
         // Handle Errors here.
