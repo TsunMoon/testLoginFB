@@ -7,6 +7,7 @@ const loginFB = () => {
         // The signed-in user info.
         var user = result.user;
         log(user);
+        localStorage.setItem("userFB",user);
         // ...
       }).catch(function(error) {
         // Handle Errors here.
@@ -18,4 +19,12 @@ const loginFB = () => {
         var credential = error.credential;
         // ...
       });
+}
+
+const logoutFB = () => {
+  firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+  }).catch(function(error) {
+    // An error happened.
+  });
 }
